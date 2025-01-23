@@ -5,6 +5,6 @@ async function login(mid, mpw){//로그인 함수 분리
 	const data = await res.json();
 	return data;
 }
-function logout(mid, mpw){//로그아웃 함수 분리
+function logout(logoutui){//로그아웃 함수 분리
 	logoutui.attr("href","/member/logout").text("로그아웃")
 }
